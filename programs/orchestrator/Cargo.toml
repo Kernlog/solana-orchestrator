@@ -1,0 +1,18 @@
+[package]
+name = "orchestrator"
+version = "0.1.0"
+description = "Central hub that manages cross-program workflows and security"
+edition = "2021"
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "orchestrator"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.26.0" 
